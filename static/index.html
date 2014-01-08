@@ -2,24 +2,57 @@
 
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>HCI Project Portfolio</title>
+<style type="text/css">
+#background img{
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.hover{
+	z-index: 2;
+	position: fixed;
+	left: 40px;
+	top: 30px;
+	color: #FFF;
+	font-family:Helvetica, sans-serif, "Heiti SC Light";
+	text-shadow:#777;
+}
+.hover h1 {
+	color: #FEFEFE;
+	font-size: 60px;
+}
+.hover h4 {
+	text-indent:20px;
+}
+}
+</style>
 </head>
 
 <body>
+<div id="background">
+    <img src="images/background.jpg" alt="" />
+</div>
 	<!-- this is a comment in HTML -->
-	<h1>Xiaonan Tong</h1> <!-- h1 through h5 are headers. The higher the number, the smaller the header -->
-	<h4>Project Portfolio</h4>
+<div class="hover">
+	<h1>[Xiaonan Tong]</h1> 
+  <!-- h1 through h5 are headers. The higher the number, the smaller the header -->
+  <h4>[>] Project Portfolio</h4>
 
-	<!-- p means paragraph -->
-	<p>Xiaonan Tong is a human being studying ways to flip bits at Stanford University.</p>
+  <!-- p means paragraph -->
+  <p>Xiaonan Tong is a human being studying ways to flip bits at Stanford University.</p>
 
-	<h4>Projects</h4>
-	<ol>
-		<li>Waiting in line</li>
-		<li>Needfinding</li>
-		<li>Prototyping</li>
-		<li>...</li>
+  <h4>[>] Projects</h4>
+  <ol>
+	  <li>Waiting in line</li>
+	  <li>Needfinding</li>
+	  <li>Prototyping</li>
+	  <li>...</li>
 	</ol>
+    </div>
 </body>
 </html>
